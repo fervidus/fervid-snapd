@@ -1,28 +1,69 @@
 {
-  "name": "kemra102-snapd",
-  "version": "1.1.0",
-  "author": "Danny Roberts",
+  "name": "fervid-snapd",
+  "version": "2.0.1",
+  "author": "Paul Talbot",
   "summary": "Install and manage the snapd service for installing and managing snap packages.",
   "license": "BSD-2-Clause",
-  "source": "https://github.com/kemra102/puppet-snapd",
-  "project_page": "https://github.com/kemra102/puppet-snapd",
-  "issues_url": "https://github.com/kemra102/puppet-snapd/issues",
-  "tags": [ "package", "packages", "snap", "snaps", "install" ],
+  "source": "https://github.com/fervidus/fervid-snapd",
+  "project_page": "https://github.com/fervidus/fervid-snapd",
+  "issues_url": "https://github.com/fervidus/fervid-snapd/issues",
+  "dependencies": [
+
+  ],
   "operatingsystem_support": [
     {
       "operatingsystem": "Archlinux"
     },
     {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "8",
+        "9"
+      ]
+    },
+    {
       "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [ "16.04", "18.04" ]
+      "operatingsystemrelease": [
+        "16.04",
+        "18.04"
+      ]
     }
   ],
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 4.0.0 < 6.0.0"
+      "version_requirement": ">= 6.0.0 < 8.0.0"
     }
   ],
-  "dependencies": [],
-  "data_provider": null
+  "tags": [
+    "package",
+    "packages",
+    "snap",
+    "snaps",
+    "install"
+  ],
+  "pdk-version": "2.1.0",
+  "template-url": "pdk-default#2.1.0",
+  "template-ref": "tags/2.1.0-0-ga675ea5"
 }
