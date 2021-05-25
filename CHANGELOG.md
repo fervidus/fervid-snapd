@@ -13,35 +13,24 @@ All notable changes to this project will be documented in this file. The format 
 
 ### Changed
 
-- pdkconvert - v2.1.0
-- bump minimal Puppet version to 6.0.0
-- added OS support for RedHat/Debian
+- `pdkconvert` - v2.1.0
+- bump minimal Puppet version to v6.0.0
+- additional OS support
 - refactored spec test
-- provider: confine kernel to linux
+- provider - confine kernel to linux
 
-## [v8.5.0](https://github.com/puppetlabs/puppetlabs-ntp/tree/v8.5.0) (2020-12-16)
+## [v1.1.0](https://github.com/kemra102/puppet-snapd/tree/v1.1.0) (2018-09-11)
 
-[Full Changelog](https://github.com/puppetlabs/puppetlabs-ntp/compare/v8.4.0...v8.5.0)
+[Full Changelog](https://github.com/kemra102/puppet-snapd/compare/v1.0.0...v1.1.0)
 
-### Added
+### Changed
 
-- pdksync - \(feat\) - Add support for Puppet 7 [\#594](https://github.com/puppetlabs/puppetlabs-ntp/pull/594) ([daianamezdrea](https://github.com/daianamezdrea))
-- \(MAINT\) Make mode for logfile configurable [\#590](https://github.com/puppetlabs/puppetlabs-ntp/pull/590) ([tmanninger](https://github.com/tmanninger))
-- \(IAC-997\) Removal of inappropriate terminology [\#587](https://github.com/puppetlabs/puppetlabs-ntp/pull/587) ([pmcmaw](https://github.com/pmcmaw))
+provider - added `snap` provider for the package resource
 
+## [v1.0.0](https://github.com/kemra102/puppet-snapd/tree/v1.0.0) (2017-01-08)
 
+### Changed
 
-## 2018-09-11 - Release 1.1.0
-### Summary
-Added provider.
-
-#### Features
-- Added the `snap` provider for the package resource.
-
-## 2017-01-08 - Release 1.0.0
-### Summary
-Initial release.
-
-#### Features
-- Installs the `snapd` package.
-- Manages the `snapd` service.
+Initial release
+package - install `snapd` package
+service - manage `snapd` service

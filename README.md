@@ -11,6 +11,10 @@
 
 ## Description
 
+Fork of [kemra102](https://github.com/kemra102)'s original [module](https://github.com/kemra102/puppet-snapd) which appears to have been abandoned sometime in 2018. If author would like to resume, please notify.
+
+---
+
 This module manages the `snapd` package and service. `snapd` is a tool that enables the installation of `snap` packages on a Linux system.
 
 See the [official website](http://snapcraft.io/) for more detailed information.
@@ -49,7 +53,6 @@ package { 'spotify':
   ensure   => purged,
   provider => snap,
 }
-
 ```
 
 ### Unsupported Operating Systems
@@ -68,16 +71,19 @@ This is the main class. Currently it has no configurable items.
 
 Supported Operating Systems:
 
-* Arch Linux
-* Ubuntu 16.04 & 16.10
+* Arch Linux 5
+* RedHat derivatives 7-8
+* Debian 8-9
+* Ubuntu 16.04-18.04
+
 
 Supported Puppet Versions:
 
-* Puppet Enterprise >= 2015.2
-* Puppet Open Source >= 4.0.0
+* Puppet Enterprise >= 2017.3
+* Puppet Open Source >= 6.0.0
 
 ## Provider
-We provide a basic package provider which allows installs and removes, we will need to add latest,query and update support in the future.
+We provide a basic package provider which allows installs and removes, we will need to add latest, query and update support in the future.
 
 ## Development
 
@@ -85,6 +91,6 @@ To contribute to the development of this module please raise a pull request.
 
 Particular help is currently highly desired particularly on the following items:
 
-* Package provider query,latest and update functionality
-* Support for more Operating Systems.
-* More testing.
+* Package provider query, latest and update functionality
+* Support for more Operating Systems
+* More testing

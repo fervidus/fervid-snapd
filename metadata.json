@@ -1,6 +1,6 @@
 {
   "name": "fervid-snapd",
-  "version": "2.0.1",
+  "version": "1.2.1",
   "author": "Paul Talbot",
   "summary": "Install and manage the snapd service for installing and managing snap packages.",
   "license": "BSD-2-Clause",
