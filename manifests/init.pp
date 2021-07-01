@@ -26,6 +26,9 @@ class snapd {
 
   $service_name = $facts['os']['name'] ? {
     'Archlinux' => 'snapd.socket',
+    'CentOS'    => 'snapd.socket',
+    'RedHat'    => 'snapd.socket',
+    'Fedora'    => 'snapd.socket',
     default     => 'snapd'
   }
 
